@@ -231,13 +231,18 @@ header {
 }
 
 .photo_collage {
-    /* display: flex; */
+    display: flex;
+    margin-top: 90px;
+}
+
+.about_me_content {
+    margin-left: 23px;
     margin-top: 90px;
 }
 
 .about_me {
     margin-top: 0px;
-    margin-left: 600px;
+    /*margin-left: 600px;*/
     font-family: Segoe;
     font-style: normal;
     font-weight: normal;
@@ -256,7 +261,7 @@ header {
     height: 148px;
 
     margin-top: 20px;
-    margin-left: 600px;
+    /*margin-left: 600px;*/
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -273,7 +278,7 @@ header {
     height: 39px;
     background: #095B5B;
     border-radius: 10px;
-    margin-left: 600px;
+    /*margin-left: 600px;*/
     margin-top: 35px;
     outline: none;
     border: none;
@@ -306,7 +311,7 @@ header {
     grid-template-rows: repeat(6, 5vw);
     grid-gap: 5px;
     width: 583px;
-    height: 100px;
+    /*height: 100px;*/
 }
 
 .gallery__img {
@@ -360,7 +365,7 @@ header {
 .background_for_quote {
     width: 100%;
     height: 260px;
-    margin-top: 270px;
+    margin-top: 168px;
 
     background: #BEC9CA;
 }
