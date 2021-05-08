@@ -757,7 +757,7 @@ header {
 @media(max-width: 1650px) {
     .for_slick_slider .items {
         width: 100%;
-        height: 400px;
+        height: 200px;
     }
 
     .for_slick_slider .items .overlay {
@@ -765,8 +765,8 @@ header {
     }
 
     .for_slick_slider .items img {
-        width: 80%;
-        height: 400px;
+        width: 100%;
+        height: 200px;
     }
 }
 
@@ -805,17 +805,22 @@ header {
         margin-top: 130px;
     }
 
-    .items {
-        padding: 50px 50px;
+    .for_slick_slider .items {
+        width: 80%;
+        height: 400px;
+    }
+
+    .for_slick_slider .items .overlay {
+        display: none;
+    }
+
+    .for_slick_slider .items img {
+        width: 80%;
+        height: 400px;
     }
 
     .for_slick_slider {
         margin-top: 25px;
-    }
-
-    .for_slick_slider .items {
-        /*width: 100%;*/
-        margin: auto;
     }
 
     .gallery {

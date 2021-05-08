@@ -3,8 +3,8 @@ $('.multiple-items').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   arrows: false,
-  // adaptiveHeight: true,
-  // adaptiveWidth: true,
+   adaptiveHeight: false,
+   adaptiveWidth: false,
   autoplay: true,
   autoplaySpeed: 2000,
 
