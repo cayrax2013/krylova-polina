@@ -1,12 +1,14 @@
 package ru.boger.project.spring_boot_blog;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Component;
 
 @Component
 public class EmailServiceImpl {
+    @Qualifier("getMailSender")
     @Autowired
     private JavaMailSender emailSender;
 
