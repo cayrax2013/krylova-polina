@@ -15,6 +15,7 @@ $(document).ready(function() {
             $('#form').trigger('reset');
             $('.feedback_form').trigger('reset');
             form.reset()
+            $(this).find("input[type=text], select").val("");
         });
         return false;
     });

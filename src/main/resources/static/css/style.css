@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Gabriola';
     font-style: normal;
@@ -669,6 +668,12 @@ header {
     text-decoration: none;
 
     color: #93A7A6;
+}
+
+.footer_nav_item:hover {
+    border-bottom: 2px #93A7A6  solid ;
+    /*padding: 0 0 4px;*/
+    transform: translateY(-5px);
 }
 
 .footer_nav_item.last_item {

@@ -25,7 +25,7 @@ public class HomePageController {
     public String sendMessage(@ModelAttribute("person") Person person) {
         String message = String.format("Вами заинтересовался новый заказчик:\n\nИмя: %s\nПочта: %s\nНомер телефона: %s", person.getName(), person.getEmail(), person.getNumberPhone());
         userService.sendMessage(message);
-        return "index";
+        return "redirect:/";
     }
 
 }

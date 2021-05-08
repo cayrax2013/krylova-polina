@@ -155,8 +155,7 @@
     <div class="feedback" id="want_site">
         <div class="want_site">Хочу сайт</div>
 
-        <form th:method="POST" th:action="@{/}" th:object="${person}" class="feedback_form"
-              onsubmit="return confirm('Submit?');" id="form">
+        <form th:method="POST" th:action="@{/}" th:object="${person}" class="feedback_form" id="form">
             <input type="text" th:field="*{name}" class="feedback_input" placeholder="Имя">
             <input type="text" th:field="*{email}" class="feedback_input" placeholder="Почта">
             <input type="text" th:field="*{numberPhone}" class="feedback_input" placeholder="Номер">
@@ -190,12 +189,12 @@
             </div>
 
             <div class="footer_nav">
-                <ul class="footer_nav_list">
-                    <li><a data-scroll="#portfolio" href="#" class="footer_nav_item">Портфолио</a></li>
-                    <li><a data-scroll="#about_me" href="#" class="footer_nav_item">Обо мне</a></li>
-                    <li><a data-scroll="#photo_gallery" href="#" class="footer_nav_item">Фотогалерея</a></li>
-                    <li><a data-scroll="#want_site" href="#" class="footer_nav_item">Хочу сайт</a></li>
-                </ul>
+                <div class="footer_nav_list">
+                    <a data-scroll="#portfolio" href="#" class="footer_nav_item">Портфолио</a>
+                    <a data-scroll="#about_me" href="#" class="footer_nav_item">Обо мне</a>
+                    <a data-scroll="#photo_gallery" href="#" class="footer_nav_item">Фотогалерея</a>
+                    <a data-scroll="#want_site" href="#" class="footer_nav_item">Хочу сайт</a>
+                </div>
 
                 <a class="developer" href="https://vladislav-boger.web.app/" target="_blank">
                     Web developer - Vladislav Boger
