@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: auto;
     max-width: 1200px;
     padding-left: 120px;
     padding-right: 120px;
@@ -89,13 +89,8 @@ header {
     position: absolute;
     width: 527px;
     height: 546px;
-    float: right;
-    margin-left: 770px;
-
+    right: 0;
     filter: drop-shadow(10px 10px 10px #93A7A6);
-
-    /*background: url(images/photo_2021-05-01_22-04-46.jpg);*/
-    /*filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25)), drop-shadow(30px 20px 100px #93A7A6), drop-shadow(-30px -20px 100px #93A7A6), drop-shadow(-30px -20px 100px #93A7A6), drop-shadow(30px 20px 100px #93A7A6);*/
     border-radius: 30px;
 }
 

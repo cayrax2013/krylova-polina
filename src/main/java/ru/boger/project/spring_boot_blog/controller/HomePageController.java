@@ -21,6 +21,11 @@ public class HomePageController {
         return "index";
     }
 
+    @GetMapping("mobile.html")
+    public String showMobile() {
+        return "mobile";
+    }
+
     @PostMapping()
     public String sendMessage(@ModelAttribute("person") Person person) {
         String message = String.format("Вами заинтересовался новый заказчик:\n\nИмя: %s\nПочта: %s\nНомер телефона: %s", person.getName(), person.getEmail(), person.getNumberPhone());
