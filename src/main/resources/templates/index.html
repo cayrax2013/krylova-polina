@@ -8,21 +8,16 @@
     <link rel="stylesheet" type="text/css" href="/css/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="/css/slick/slick-theme.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
-
+    <script ENGINE="text/javascript">
+        if(screen.width <= 800){
+            location.href='/mobile.html';
+        }
+    </script>
     <title>Polina Krylova</title>
 </head>
 <body>
 <div class="container">
     <header>
-
-        <script ENGINE="text/javascript">
-
-            if(screen.width <= 800){
-
-                location.href='/mobile.html';
-
-            }
-        </script>
         <img class="logo_photo" th:src="@{/imges/logoPK.svg}" alt="">
 
         <div class="nav">
