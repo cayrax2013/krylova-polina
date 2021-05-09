@@ -8,21 +8,16 @@
     <link rel="stylesheet" type="text/css" href="/css/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="/css/slick/slick-theme.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
-
+    <script ENGINE="text/javascript">
+        if(screen.width <= 800){
+            location.href='/mobile.html';
+        }
+    </script>
     <title>Polina Krylova</title>
 </head>
 <body>
 <div class="container">
     <header>
-
-        <script ENGINE="text/javascript">
-
-            if (screen.width <= 800) {
-
-                location.href = '/mobile.html';
-
-            }
-        </script>
         <img class="logo_photo" th:src="@{/imges/logoPK.svg}" alt="">
 
         <div class="nav">
@@ -100,6 +95,7 @@
 
 <div class="container">
     <div class="photo_collage" id="about_me">
+
         <div class="gallery">
             <figure class="gallery__item gallery__item--1">
                 <img src="imges/firstSerteficate.png" alt="Gallery image 1" class="gallery__img">
@@ -203,13 +199,13 @@
                     <a data-scroll="#portfolio" href="#" class="footer_nav_item">Портфолио</a>
                     <a data-scroll="#about_me" href="#" class="footer_nav_item">Обо мне</a>
                     <a data-scroll="#photo_gallery" href="#" class="footer_nav_item">Фотогалерея</a>
-                    <a data-scroll="#want_site" href="#" class="footer_nav_item last_item">Хочу сайт</a>
+                    <a data-scroll="#want_site" href="#" class="footer_nav_item">Хочу сайт</a>
                 </div>
-            </div>
 
-            <a class="developer" href="https://vladislav-boger.web.app/" target="_blank">
-                Web developer - Vladislav Boger
-            </a>
+                <a class="developer" href="https://vladislav-boger.web.app/" target="_blank">
+                    Web developer - Vladislav Boger
+                </a>
+            </div>
         </div>
     </div>
 </footer>
