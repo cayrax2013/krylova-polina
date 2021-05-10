@@ -1,16 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Polina Krylova</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script ENGINE="text/javascript">
-        if(screen.width >= 801){
-            location.href='/';
+        if (screen.width >= 501) {
+            location.href = '/';
         }
     </script>
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/styleMobile.css}"/>
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/normalize.css}"/>
+    <link rel="stylesheet" type="text/css" href="/css/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/slick/slick-theme.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 </head>
 <body>
+<header>
+    <div class="nav">
+        <img class="logo_photo" th:src="@{/imges/logo-pk.png}" alt="">
+        <div class="socials">
+            <a href="https://vk.com/p.krlv_9" target="_blank">
+                <img class="intro_social_link" th:src="@{imges/VK_white.png}" alt="">
+            </a>
+            <a href="http://instagram.com/k.r.l.v.9" target="_blank">
+                <img class="intro_social_link" src="imges/Instagram.png" alt=""></a>
+            <a href="https://t.me/krlv_9" target="_blank">
+                <img class="intro_social_link" src="imges/Telegram_white.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="intro">
+        <img class="intro_photo" th:src="@{imges/avatarForIntro.png}" alt="">
+        <div class="intro-offer">
+            <div class="intro_name">
+                Полина Крылова
+            </div>
 
+            <div class="intro_profession">
+                Веб-дизайнер
+            </div>
+            <!--        <br>-->
+            <button class="intro_resume" type="button" data-modal="#modal_resume">РЕЗЮМЕ</button>
+        </div>
+    </div>
+</header>
+<section class="portfolio">
+    <div class="portfolio_header">
+        Портфолио
+    </div>
 
+    <div class="for_slick_slider multiple-items" id="portfolio">
+        <div class="items">
+            <img src="imges/projectEuro.jpg" alt="">
+            <div class="overlay"></div>
+        </div>
+        <div class="items">
+            <img src="imges/projectAdidas.jpg" alt="">
+            <div class="overlay"></div>
+        </div>
+        <div class="items">
+            <img src="imges/projectIphone.jpg" alt="">
+            <div class="overlay"></div>
+        </div>
+        <div class="items">
+            <img src="imges/projectScobee.jpg" alt="">
+            <div class="overlay"></div>
+        </div>
+        <div class="items">
+            <img src="imges/projectHite.jpg" alt="">
+            <div class="overlay"></div>
+        </div>
+        <div class="items">
+            <img src="imges/projectGame.jpg" alt="">
+            <div class="overlay"></div>
+        </div>
+        <div class="items">
+            <img src="imges/projectAnimal.jpg" alt="">
+            <div class="overlay"></div>
+        </div>
+    </div>
+</section>
+<section class="about_me">
+    <div class="about_me-deck">
+        <div class="about_me-title">
+            Обо мне
+        </div>
+        <div class="gallery">
+            <figure class="gallery__items gallery__item--4">
+                <img src="imges/avatarCollage.png" alt="Gallery image 4" class="gallery__img1">
+            </figure>
+            <div class="certificates">
+                <figure class="gallery__items gallery__item--1">
+                    <img src="imges/firstSerteficate.png" alt="Gallery image 1" class="gallery__img2">
+                </figure>
+                <figure class="gallery__items gallery__item--2">
+                    <img src="imges/secondSerteficate.png" alt="Gallery image 2" class="gallery__img3">
+                </figure>
+                <figure class="gallery__items gallery__item--3">
+                    <img src="imges/thirdSerteficate.png" alt="Gallery image 3" class="gallery__img4">
+                </figure>
+            </div>
+        </div>
+        <div class="about_me_text">
+            Привет! Я веб-дизайнер. Использую такие технологии как - Figma, Adobe Photoshop, Tilda.
+            <br>
+            <br>
+            Занимаюсь веб-дизайном уже 1 год. И за этот год уже получила сертификаты доказывающие мои навыки.
+        </div>
+        <button class="btn_resume_about_me" type="button" data-modal="#modal_resume">РЕЗЮМЕ</button>
+    </div>
+</section>
+<section class="quote">
+    <div class="background_for_quote">
+        <div class="quote-text">“Делай, что можешь, с тем, что<br> имеешь, там, где ты есть!”</div>
+        <div class="author_quote">-Теодор Рузвельт</div>
+    </div>
+</section>
+<section class="photogalery">
+    <div class="photogalery_title">Фотогалерея</div>
+
+    <div>
+        <div class="photogalleries" id="photo_gallery">
+            <figure class="photo_gallery__item photogallery__item--1">
+                <img src="imges/firstGallery.png" alt="Gallery image 1" class="photo_gallery__img1"
+            </figure>
+            <div class="photo2-3">
+                <figure class="gallery__item photogallery__item--2">
+                    <img src="imges/secondGallery.png" alt="Gallery image 2" class="photo_gallery__img2">
+                </figure>
+                <figure class="gallery__item photogallery__item--3">
+                    <img src="imges/thirdGallery.png" alt="Gallery image 3" class="photo_gallery__img3">
+                </figure>
+            </div>
+            <div class="photo4-5">
+                <figure class="gallery__item photogallery__item--4">
+                    <img src="imges/fourthGallery.png" alt="Gallery image 4" class="photo_gallery__img4">
+                </figure>
+                <figure class="gallery__item photogallery__item--5">
+                    <img src="imges/fifthGallery.png" alt="Gallery image 5" class="photo_gallery__img5">
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="feedback">
+    <div class="feedbacks" id="want_site">
+        <div class="want_site">Хочу сайт</div>
+
+        <form th:method="POST" th:action="@{/}" th:object="${person}" class="feedback_form" id="form">
+            <input type="text" th:field="*{name}" class="feedback_input" placeholder="Имя">
+            <input type="text" th:field="*{email}" class="feedback_input" placeholder="Почта">
+            <input type="text" th:field="*{numberPhone}" class="feedback_input" placeholder="Номер">
+            <button type="submit" class="feedback_submit">ПОДТВЕРДИТЬ</button>
+        </form>
+
+    </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer_inner">
+            <div class="footer_info">
+                <img class="footer_logo" src="imges/footerLogo.png">
+                <div class="footer_social">
+                    <a href="https://vk.com/p.krlv_9" target="_blank">
+                        <img class="footer_social_link" src="imges/vkFooter.png">
+                    </a>
+                    <a href="http://instagram.com/k.r.l.v.9" target="_blank">
+                        <img class="footer_social_link" src="imges/instFooter.png">
+                    </a>
+                    <a href="https://t.me/krlv_9" target="_blank">
+                        <img class="footer_social_link" src="imges/telegramFooter.png">
+                    </a>
+                </div>
+                <div class="footer_nav">
+                    <div class="coppyright">
+                        © 2021 Polina Krylova
+                    </div>
+
+                    <a class="developer" href="https://vladislav-boger.web.app/" target="_blank">
+                        Web developer - Vladislav Boger
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="css/slick/slick.min.js"></script>
+<script src="scroll.js"></script>
+<script type="text/javascript" src="app.js"/>
+<script src="feedback.js"></script>
 </body>
 </html>

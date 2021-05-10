@@ -22,7 +22,8 @@ public class HomePageController {
     }
 
     @GetMapping("mobile.html")
-    public String showMobile() {
+    public String showMobile(Model model) {
+        model.addAttribute("person", new Person());
         return "mobile";
     }
 
