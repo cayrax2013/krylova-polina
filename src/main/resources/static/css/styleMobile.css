@@ -397,3 +397,56 @@ header {
     margin-top: 17px;
     margin-right: 40px;
 }
+
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(192, 192, 192, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.modal-dialog {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    background-color: transparent;
+}
+
+.show {
+    display: flex;
+}
+
+.model_photo {
+    width: 350px;
+
+}
+
+.btn_modal {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1rem 2rem;
+    width: 12.5rem;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+
+    font-size: 1rem;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    opacity: 0.7;
+}
