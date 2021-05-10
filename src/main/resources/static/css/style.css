@@ -10,6 +10,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('Segoe'), url('../segoe.woff') format('woff');
+    src: local('Segoe'), url("../segoe.ttf") format('ttf');
 }
 
 body {
