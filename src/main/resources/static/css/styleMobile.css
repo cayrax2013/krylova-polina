@@ -6,7 +6,7 @@
 }
 
 @font-face {
-    font-family: 'Segoe';
+    font-family: Segoe;
     font-style: normal;
     font-weight: normal;
     src: local('Segoe'), url('../segoe.woff') format('woff');
