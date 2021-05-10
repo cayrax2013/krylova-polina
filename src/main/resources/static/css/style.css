@@ -312,7 +312,8 @@ header {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
-    grid-gap: 5px;
+    grid-row-gap: 5px;
+    grid-column-gap: 15px;
     width: 100%;
     grid-template-areas: "photo1 photo4 text"
                          "photo2 photo4 text"
