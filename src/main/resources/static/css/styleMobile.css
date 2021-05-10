@@ -9,7 +9,12 @@
     font-family: 'Segoe';
     font-style: normal;
     font-weight: normal;
-    src: local('Segoe'), url('../segoe.woff') format('woff');
+    src:
+            url("../segoe.svg") format('svg'),
+            url("../segoe.eot"),
+            url('../segoe.woff') format('woff'),
+            url('../segoe.ttf') format('truetype'),
+            url('../segoe.woff2') format('woff2');
 }
 
 * {
