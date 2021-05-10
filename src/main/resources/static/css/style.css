@@ -17,6 +17,7 @@
         url('../segoe.woff2') format('woff2');
 }
 
+
 body {
     font-family: Gabriola;
     background-color: #EDF6FE;
@@ -95,6 +96,7 @@ header {
     width: 527px;
     height: 546px;
     right: 0;
+    margin-right: 33px;
     filter: drop-shadow(10px 10px 10px #93A7A6);
     border-radius: 30px;
 }
@@ -246,7 +248,7 @@ header {
 .about_me {
     margin-top: 0px;
     /*margin-left: 600px;*/
-    font-family: Segoe;
+    font-family: Gabriola;
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
