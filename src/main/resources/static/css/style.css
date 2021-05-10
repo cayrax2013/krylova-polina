@@ -9,9 +9,11 @@
     font-family: 'Segoe';
     font-style: normal;
     font-weight: normal;
-    src: url('../segoe.woff') format('woff'),
-         url('../segoe.ttf') format('truetype'),
-         url('../segoe.woff2') format('woff2');
+    src:
+        url("../segoe.eot"),
+        url('../segoe.woff') format('woff'),
+        url('../segoe.ttf') format('truetype'),
+        url('../segoe.woff2') format('woff2');
 
 }
 
