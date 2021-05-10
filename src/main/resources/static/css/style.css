@@ -10,6 +10,7 @@
     font-style: normal;
     font-weight: normal;
     src:
+        url("../segoe.svg") format('svg'),
         url("../segoe.eot"),
         url('../segoe.woff') format('woff'),
         url('../segoe.ttf') format('truetype'),
