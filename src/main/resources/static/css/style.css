@@ -18,6 +18,17 @@
 
 }
 
+@font-face{
+    font-family: 'wf_SegoeUILight';
+    src:url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.eot');
+    src:url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.eot?#iefix') format('embedded-opentype'),
+    url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.woff') format('woff'),
+    url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.ttf') format('truetype'),
+    url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.svg#web') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: Gabriola;
     background-color: #EDF6FE;
@@ -247,7 +258,7 @@ header {
 .about_me {
     margin-top: 0px;
     /*margin-left: 600px;*/
-    font-family: Segoe;
+    font-family: 'wf_SegoeUILight';
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
