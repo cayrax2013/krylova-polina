@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://thymeleaf.org">
+<html lang="en" xmlns:th="http://thymeleaf.org" xmlns:v-on="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -160,15 +160,15 @@
 
 
 <div class="container">
-    <div class="feedback" id="want_site">
+    <div class="feedback" id="app">
         <div class="want_site">Хочу сайт</div>
 
-        <form th:method="POST" th:action="@{/}" th:object="${person}" class="feedback_form" id="form">
-            <input type="text" th:field="*{name}" class="feedback_input" placeholder="Имя">
-            <input type="text" th:field="*{email}" class="feedback_input" placeholder="Почта">
-            <input type="text" th:field="*{numberPhone}" class="feedback_input" placeholder="Номер">
-            <button type="submit" class="feedback_submit">ПОДТВЕРДИТЬ</button>
-        </form>
+        <div class="feedback_form">
+            <input v-model="name1" class="feedback_input" placeholder="Имя">
+            <input v-model="email1" class="feedback_input" placeholder="Почта">
+            <input v-model="numberPhone1" class="feedback_input" placeholder="Номер">
+            <button v-on:click="sendFeedbackFormToServer" class="feedback_submit">ПОДТВЕРДИТЬ</button>
+        </div>
 
 
     </div>
@@ -220,10 +220,12 @@
     </div>
 </div>
 
+<script src="https://unpkg.com/vue@next"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="vue.js"></script>
 <script src="css/slick/slick.min.js"></script>
 <script src="scroll.js"></script>
 <script type="text/javascript" src="app.js"/>
-
 <script src="feedback.js"></script>
 </body>
 </html>
